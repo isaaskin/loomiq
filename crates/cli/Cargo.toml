@@ -1,0 +1,17 @@
+[package]
+name = "loomiq-cli"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+loomiq-core = { path = "../core" }
+loomiq-engine = { path = "../engine" }
+clap = { version = "4.4", features = ["derive"] }
+anyhow = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+colored = "2.0"
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+dirs = "6.0.0"
